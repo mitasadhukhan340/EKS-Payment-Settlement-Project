@@ -4,7 +4,7 @@ terraform {
         bucket = "payments-lab-tfstate-128425594280"
         key = "dev/cluster/terraform.tfstate"
         region = "ap-south-1"
-        dynamodb_table = "tf-locks"
+        use_lockfile = true
         encrypt = true
     }
     required_providers {
